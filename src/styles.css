@@ -1,0 +1,128 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.h {
+  background-color: black;
+  color: white;
+  height: 50px;
+  font-size: xx-large;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.hp {
+  margin-left: 80px;
+  padding: 10px;
+}
+.cart-icon {
+  color: white;
+  padding: 10px;
+  display: flex;
+}
+.cart-icon .Counter {
+  height: 18px;
+  width: 18px;
+  background-color: blue;
+  border-radius: 50%;
+  position: relative;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+}
+.icon {
+  font-size: 25px;
+  margin-top: 5px;
+}
+img {
+  height: 150px;
+}
+.card-wrapper {
+  display: flex;
+  margin: 40px;
+  box-shadow: 0px 0px 7px black;
+  width: 320px;
+  border-radius: 7px;
+  transition: 0.4s ease-in-out;
+}
+.card-wrapper:hover {
+  transform: scale(1.07);
+}
+.image-wrapper {
+  width: 130px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-right: 1px solid rgb(201, 201, 201);
+}
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.price {
+  margin-bottom: auto;
+}
+.content button {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  height: 25px;
+}
+.quantity {
+  display: flex;
+  align-self: flex-end;
+  border-radius: 3px;
+  border: 1px solid grey;
+}
+.quantity div {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quantity > div:first-child,
+.quantity > button {
+  background-color: rgb(0, 0, 111);
+  color: white;
+}
+.quantity > button {
+  width: 25px;
+  border-radius: 0;
+}
+.quantity > button:disabled {
+  opacity: 0.6;
+}
+main {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 50px;
+}
+.total {
+  background-color: grey;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  background-position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+.total p {
+  margin-right: 35px;
+  font-weight: bold;
+}
